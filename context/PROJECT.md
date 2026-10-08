@@ -2,7 +2,7 @@
 
 Accountable: Kenneth Riley II (Specifier)
 
-## Original Problem Statement (<ReginaChoi>, HW1)
+## Original Problem Statement (ReginaChoi, HW1)
 I am concerned about how artificial intelligence is going to affect the field of accounting as well as future job opportunities for newly graduated students like myself. A few friends and church members have suggested that I should change my major because they think AI will take over accounting jobs, and hearing this repeatedly from people I trust has made me question how accounting students can actually prepare for a future that is so uncertain.
 
 ## Reframed for the Team
