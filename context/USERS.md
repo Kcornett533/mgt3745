@@ -16,7 +16,7 @@ Accountable: Kenneth Riley II (Specifier)
 ## Profile 1: Accounting Graduate Preparing for Initial Career Entry
 
 - **Context.** A recent accounting graduate, or senior preparing for graduation, seeking an entry-level role in audit, tax, or financial analysis. As documented in INT-03, students often complete coursework without clear exposure to which operational skills employers actually require, leaving school without tangible internship experience or concrete project evidence to distinguish their application from automated resume submissions.
-- **Job statement.** When I am preparing my qualifications for entry-level accounting and audit roles, I want to benchmark my technical coursework and data verification capabilities against explicit, employer-defined compliance standards, so that I can provide verifiable evidence of audit readiness rather than relying on unverified claims.
+- **Job statement (JOB-01)** When I am preparing my qualifications for entry-level accounting and audit roles, I want to benchmark my technical coursework and data verification capabilities against explicit, employer-defined compliance standards, so that I can provide verifiable evidence of audit readiness rather than relying on unverified claims.
 - **Success looks like.** The student evaluates their profile against concrete operational requirements like accredited accounting/finance curriculum, graduation timeline, work eligibility, and completed internal control/audit coursework artifacts, and receives an immediate, transparent breakdown showing whether their qualifications meet employer thresholds, clarifying exactly which skill areas or credentials need further development before applying.
 
 ---
@@ -24,7 +24,7 @@ Accountable: Kenneth Riley II (Specifier)
 ## Profile 2: High-Volume Campus Recruiter
 
 - **Context.** A corporate talent acquisition specialist managing large-scale applicant pools across entry-level business and analytical roles. As documented in INT-01, recruiters process hundreds of applicants per posting and face severe fatigue from undifferentiated, AI-generated keyword submissions. They depend on deterministic knockout gates to verify non-negotiable operational requirements and audit coursework before investing time in manual reviews.
-- **Job statement.** When screening large applicant batches against tight hiring deadlines, I want a deterministic screening mechanism that validates baseline qualifications and technical audit competencies upfront, so that non-qualifying submissions are filtered out immediately and our hiring managers only review candidates with proven readiness.
+- **Job statement (JOB-02)** When screening large applicant batches against tight hiring deadlines, I want a deterministic screening mechanism that validates baseline qualifications and technical audit competencies upfront, so that non-qualifying submissions are filtered out immediately and our hiring managers only review candidates with proven readiness.
 - **Success looks like.** A triage view where applicant submissions are automatically evaluated against both administrative prerequisites and technical compliance criteria, allowing the recruiter to instantly filter by status (`Eligible` vs. `Ineligible`) or query by name to shortlist verified candidates in seconds without manual transcript audits.
 
 ---
@@ -32,13 +32,5 @@ Accountable: Kenneth Riley II (Specifier)
 ## Profile 3: Financial Document Reviewer & Compliance Lead
 
 - **Context.** A finance and compliance manager responsible for auditing high-stakes transactions, schedules, and intake records. As documented in INT-01, routine record intake carries substantial risk: a single omitted field or unvalidated detail creates compounding operational delays and compliance liability, forcing managers to rely on strict manual reviews to catch missing inputs before records advance.
-- **Job statement.** When I am reviewing new-hire onboarding records or financial intake documents, I want transparent confirmation that submissions adhere to strict internal control standards with complete audit trails, so that unvalidated or malformed entries are prevented from entering production systems.
+- **Job statement (JOB-03)** When I am reviewing new-hire onboarding records or financial intake documents, I want transparent confirmation that submissions adhere to strict internal control standards with complete audit trails, so that unvalidated or malformed entries are prevented from entering production systems.
 - **Success looks like.** Every candidate verification or document record is validated against strict schema rules before storage, rejecting incomplete submissions with explicit error codes (HTTP 400) and feedback, and preserving an immutable, persistent audit log in the edge database.
-
----
-
-## Profile 4: Biomedical Research Lead & Computational Pipeline Author
-
-- **Context.** A computational biology researcher or R&D lead (such as an undergraduate lab researcher or biotech executive) managing custom data pipelines and nonstandard experimental protocols. As documented in INT-01 and INT-02, researchers face massive pre-submission friction when packaging raw data (e.g., spending 10+ hours manually organizing TIF files and script logs) and risk severe publication delays or unbudgeted external re-runs when peer reviewers challenge the validity of custom pipeline execution thresholds.
-- **Job statement.** When I am submitting novel scientific findings or custom data pipelines for peer review, I want to automatically generate an immutable data manifest and verified protocol execution lineage, so that I can eliminate manual file packaging overhead and definitively prove raw data integrity without costly, delayed external validation re-runs.
-- **Success looks like.** An automated execution logging system that captures 64-character SHA-256 cryptographic file signatures, pipeline parameter state, and dataset versions during analysis runs, creating an immutable audit trail that can be cross-referenced across lab workstations and instantly audited by peer reviewers.
