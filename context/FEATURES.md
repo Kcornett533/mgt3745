@@ -22,14 +22,14 @@ Accountable: Kenneth Riley II (Specifier)
 *Traces to: USERS.md (JOB-01, JOB-02)*
 
 - **Ubiquitous:** The system shall evaluate every candidate submission against deterministic accounting compliance requirements: accredited Accounting/Finance degree alignment, graduation timeline, and foundational internal control coursework.
-- **Event-driven:** When a student submits their candidate profile, the system shall evaluate the credentials against compliance rules and assign an immediate status badge (`Eligible` or `Ineligible`).
+- **Event-driven:** When a student submits their candidate profile, the system shall evaluate the credentials against compliance rules and assign an immediate, strictly binary status badge (Eligible or Ineligible with no conditional middle states).
 - **State-driven:** While displaying evaluation results, the system shall render `Eligible` in success green (`#1b8036`) and `Ineligible` in error red (`#922020`) per `STYLE.md`.
 - **Unwanted-behavior (IF):** If a candidate's degree is outside accredited business/accounting disciplines or fails baseline compliance requirements, then the system shall mark the candidate as `Ineligible` and display the specific unmet criterion without throwing application errors.
 
 ### Feature F-02: Strict Verification Schema & Error Gate (Must-be)
 *Traces to: USERS.md (JOB-03)*
 
-- **Ubiquitous:** The system shall enforce complete schema validation on both client and edge server before committing any candidate verification record to persistent storage.
+- **Ubiquitous:** The system shall enforce complete schema validation on both client and edge server before committing any candidate verification record to persistent storage, restricting payload attributes strictly to candidate name, accredited degree discipline, graduation year, work authorization status, and coursework artifact URL.
 - **Event-driven:** When an intake payload contains missing, null, or empty fields, the edge Worker shall reject the request with HTTP 400 Bad Request and return a descriptive JSON error (`{"error": "Missing required verification fields"}`).
 - **State-driven:** While an error state is active, the client UI shall render the error message visibly in the status element using `textContent` and retain previously entered data in form fields.
 - **Unwanted-behavior (IF):** If a user attempts to submit the form with any required compliance field empty, then the system shall halt network submission and display an inline warning identifying the missing field.
@@ -37,7 +37,7 @@ Accountable: Kenneth Riley II (Specifier)
 ### Feature F-03: Edge Relational Audit Persistence (Cloudflare D1) (Must-be)
 *Traces to: USERS.md (JOB-03)*
 
-- **Ubiquitous:** The system shall persist all validated candidate evaluation records in a Cloudflare D1 relational database bound via `env.DB` using parameterized SQL queries (`.bind()`).
+- **Ubiquitous:** The system shall persist all validated candidate evaluation records strictly in an edge-native Cloudflare D1 relational database bound via env.DB using parameterized SQL queries (.bind()), excluding external or proprietary cloud databases.
 - **Event-driven:** When a valid evaluation payload is submitted via `POST /entries`, the edge Worker shall insert the record and return HTTP 201 with the persisted candidate data.
 - **Event-driven:** When the application loads via `GET /entries`, the system shall retrieve all stored candidate evaluations ordered chronologically and render them in the applicant triage view.
 - **Unwanted-behavior (IF):** If the Cloudflare Worker or D1 database is unreachable, then the system shall display a clear network status message (`"Unable to connect to backend server"`) in the DOM without throwing unhandled exceptions.
@@ -63,4 +63,6 @@ Accountable: Kenneth Riley II (Specifier)
 
 - **Generative AI Resume Modification:** The system will not rewrite resumes, generate cover letters, or optimize keyword stuffing.
 - **Third-Party Enterprise ATS Connectors:** Direct API sync with proprietary enterprise platforms (e.g., Workday, Taleo, SAP) is deferred to future architecture revisions.
-- **Automated Subjective Scoring:** The system will not assign subjective numerical percentiles or opaque machine-learning scores. All evaluations remain deterministic and rule-based.
+- **Automated Subjective Scoring:** The system will not assign subjective numerical percentiles, indeterminate conditional states, or opaque machine-learning scores. All evaluations remain deterministic and rule-based.
+- **Multi-Route Marketing Portals:** Public informational marketing landing pages and multi-page routing flows are excluded. The application functions as a unified single-view candidate qualification interface.
+- **Candidate Record Mutation or Deletion:** To maintain compliance audit trails, recruiter interfaces shall not provide functionality to delete records or manually overwrite deterministic eligibility evaluations.

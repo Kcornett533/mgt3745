@@ -15,6 +15,7 @@
 
 | Name | Role | GitHub | Contact hours (ET) |
 |Regina Choi|Reviewer|ReginaChoi|17:00-00:00|
+|Rishi Ajith|Architect|RishiA10|Flexible|
 
 ## RACI Matrix (Phase 1)
 
