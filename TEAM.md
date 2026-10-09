@@ -21,21 +21,21 @@
 
 R = Responsible (does the work), A = Accountable (answers for it; exactly one person, always a person), C = Consulted (asked before), I = Informed (told after). AI tools may be R or C and are never A. Every row where AI is R names the human A beside it.
 
-| Artifact | <Specifier> | <Architect> | Kamyaab C. (Implementer) | Regina C. (Reviewer) | AI tools |
+| Artifact | <Specifier> | Rishi A. (Architect) | Kamyaab C. (Implementer) | Regina C. (Reviewer) | AI tools |
 |---|---|---|:---:|---|---|
-| TEAM.md | | | A, R | C | |
-| docs/DACI-001.md | | | R | C | |
-| context/PROJECT.md | | | C | C | |
-| context/USERS.md | | | C | C | |
-| context/FEATURES.md | | | C | C | |
-| context/ARCHITECTURE.md | | | C | C | |
-| context/STANDARDS.md, TOOLS.md, CLAUDE.md | | | A, R | C | |
-| .github/CODEOWNERS and branch protection | | | A, R | C | |
-| docs/PROBE-001.md and docs/DDR-001.md | | | A (DDR), R | C | |
-| context/EVALS.md (OST, RAT) | | | C | A, R | |
-| context/EVALS.md (Prediction Stakes) | | | R | A, R | |
-| Pull request reviews | | | C | A, R | |
-| README.md | | | A, R | C | |
+| TEAM.md | | C | A, R | C | |
+| docs/DACI-001.md | | C | R | C | |
+| context/PROJECT.md | | C | C | C | |
+| context/USERS.md | | C | C | C | |
+| context/FEATURES.md | | C | C | C | |
+| context/ARCHITECTURE.md | | A,R | C | C | |
+| context/STANDARDS.md, TOOLS.md, CLAUDE.md | | C | A, R | C | |
+| .github/CODEOWNERS and branch protection | | C | A, R | C | |
+| docs/PROBE-001.md and docs/DDR-001.md | | C | A (DDR), R | C | |
+| context/EVALS.md (OST, RAT) | | C | C | A, R | |
+| context/EVALS.md (Prediction Stakes) | | R | R | A, R | |
+| Pull request reviews | | R | C | A, R | |
+| README.md | | C | A, R | C | |
 
 ## Rotation Plan
 
