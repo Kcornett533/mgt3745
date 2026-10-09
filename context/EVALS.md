@@ -1,6 +1,6 @@
 # EVALS.md
 
-Stub from mgt3745-group-template. Accountable: Regina Choi (Reviewer)
+Accountable: Regina Choi (Reviewer). This file holds our opportunity solution tree, our riskiest assumption, the evals we plan for Phase 2, and each member's prediction.
 
 ## Opportunity Solution Tree
 
@@ -25,13 +25,17 @@ flowchart TD
 
 **Assumption:** Accounting students and recruiters will find it useful to evaluate accounting skills using actual coursework and project evidence.
 
+**Where it comes from in the tree:** This is the assumption test under Solution 2 (let students submit coursework and project evidence). If this fails, Solutions 1 and 3 do not matter much, because the checks would have nothing real to look at.
+
 **Why it is risky:** Students may not have enough practical experience to provide this evidence, and recruiters may prefer their existing screening methods. Our interviews support parts of the problem, but they do not prove that users would use our proposed tool.
 
 **Test:** Interview accounting students or recent graduates and recruiters about how they currently prepare for or evaluate entry-level accounting applications. Ask them to review the proposed requirements and explain whether the evidence would help them.
 
 **Evidence to collect:** Examples of evidence students can provide, how recruiters currently check qualifications, and specific feedback about the proposed tool.
 
-**Decision rule:** Continue with the proposed solution if interviews provide concrete evidence that the problem exists and the proposed checks address it. Otherwise, revise the problem or solution before committing to implementation.
+**Deadline:** We will run these interviews by October 22, so the results can change Phase 2 before we build too much.
+
+**Decision rule:** We will talk to at least 3 students or recent graduates and at least 2 recruiters. We continue with the current solution if at least 2 of the 3 students can name a real piece of coursework or project evidence they could submit, and at least 1 of the 2 recruiters says this kind of evidence would help them screen. If fewer people say that, we revise the problem or the solution before building more.
 
 
 ## Evals Planned for Phase 2
