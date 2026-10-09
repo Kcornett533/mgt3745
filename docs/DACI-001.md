@@ -32,8 +32,24 @@ Commit the Weights section before anyone scores. Weights and scores belong in se
 
 ## Scores (1 to 5, median of private scores)
 
+| Criterion | Weight | Option A (Regina) | Option B (Kenneth) | Option C (Rishi) | Option D (Kamyaab) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| Still wicked at team scale | 4 | 5 (20) | 4 (16) | 3 (12) | 4 (16) |
+| Users the team can reach by Oct 22 | 5 | 5 (25) | 4 (20) | 3 (15) | 3 (15) |
+| Buildable on our stack in three weeks | 5 | 5 (25) | 5 (25) | 4 (20) | 4 (20) |
+| Data we can get legally and soon | 4 | 5 (20) | 4 (16) | 4 (16) | 3 (12) |
+| Meaning: at least three of us care | 4 | 5 (20) | 5 (20) | 3 (12) | 4 (16) |
+| **Weighted Total** | | **110** | **97** | **75** | **79** |
+
 ## Decision
+
+The team selects **Option A (Regina Choi: Accounting Candidate Qualification & Verification Gate)**. It scored highest on user accessibility by October 22, clean buildability on our Cloudflare Worker + D1 stack, and strong team relevance across business and engineering disciplines. Kenneth Riley II, as the designated Approver, approved the decision on October 8, 2026.
 
 ## Dissent
 
+Kamyaab noted that accounting and audit standards involve complex regulatory compliance rules that could exceed scope. We mitigated this by bounding intake to four deterministic criteria (degree alignment, graduation timeline, work authorization, and required coursework) rather than building full transaction ledgers.
+
 ## What Would Reopen This
+
+- Reopen this decision if the team is unable to recruit at least 3 accounting/business students or recruiters for Phase 2 prototype evaluation by **October 22, 2026**.
+- Reopen if Cloudflare D1 storage limits or edge runtime constraints prevent persisting candidate verification records without third-party services.
