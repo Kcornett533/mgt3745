@@ -21,10 +21,14 @@ Accountable: Kenneth Riley II (Specifier)
 ### Feature F-01: Accounting Compliance Knockout Gate (Must-be)
 *Traces to: USERS.md (JOB-01, JOB-02)*
 
-- **Ubiquitous:** The system shall evaluate every candidate submission against deterministic accounting compliance requirements: accredited Accounting/Finance degree alignment, graduation timeline, and foundational internal control coursework.
-- **Event-driven:** When a student submits their candidate profile, the system shall evaluate the credentials against compliance rules and assign an immediate, strictly binary status badge (Eligible or Ineligible with no conditional middle states).
+- **Ubiquitous:** The system shall evaluate candidate eligibility against explicit, deterministic criteria:
+  1. **Degree Alignment:** Major must be strictly within accredited accounting/finance disciplines (`Accounting`, `Finance`, `Accounting Information Systems`, or `Internal Audit`).
+  2. **Graduation Timeline:** Graduation year must be within the current academic cycle ($\le 1$ year from target intake).
+  3. **Work Authorization:** Must possess valid, unexpired domestic employment eligibility (`Citizen`, `Permanent Resident`, `F-1 OPT`, or verified work visa).
+  4. **Coursework Prerequisite:** Completion of at least one foundational governance or assurance course (Auditing, AIS, or Internal Controls).
+- **Event-driven:** When a candidate submits their qualification profile, the system shall evaluate the credentials against the four criteria and assign an immediate, strictly binary status badge (`Eligible` or `Ineligible` with no indeterminate or conditional states).
 - **State-driven:** While displaying evaluation results, the system shall render `Eligible` in success green (`#1b8036`) and `Ineligible` in error red (`#922020`) per `STYLE.md`.
-- **Unwanted-behavior (IF):** If a candidate's degree is outside accredited business/accounting disciplines or fails baseline compliance requirements, then the system shall mark the candidate as `Ineligible` and display the specific unmet criterion without throwing application errors.
+- **Unwanted-behavior (IF):** If any of the four deterministic criteria fail to be satisfied, then the system shall flag the profile as `Ineligible` and specify which exact requirement was unmet without throwing unhandled execution exceptions.
 
 ### Feature F-02: Strict Verification Schema & Error Gate (Must-be)
 *Traces to: USERS.md (JOB-03)*
@@ -56,6 +60,13 @@ Accountable: Kenneth Riley II (Specifier)
 - **Event-driven:** When a candidate submits an audit workpaper, reconciliation project, or repository link, the system shall validate the URL structure and associate the artifact with the candidate record.
 - **State-driven:** While evaluating candidate compliance readiness, the system shall verify completion of relevant accounting governance coursework (Auditing, Accounting Information Systems, or Internal Controls).
 - **Unwanted-behavior (IF):** If an invalid or unresolvable URL is entered for the verification artifact, then the system shall flag the input field and display a prompt requiring a valid artifact link before allowing final submission.
+
+### Feature F-06: Compliance Readiness Breakdown (Attractive)
+*Traces to: USERS.md (JOB-01)*
+
+- **Ubiquitous:** The system shall provide structured readiness feedback highlighting met and unmet compliance criteria for candidate self-assessment.
+- **Event-driven:** When candidate evaluation results are presented, the system shall render a constructive breakdown of validated competencies (degree accreditation, graduation timing, governance coursework, and artifact verification).
+- **Unwanted-behavior (IF):** If a candidate's submission is determined to be Ineligible, then the system shall display specific guidance detailing which prerequisite or artifact verification requirements were unmet, rather than returning an uninformative rejection code.
 
 ---
 
