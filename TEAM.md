@@ -14,7 +14,7 @@
 ## Roster
 
 | Name | Role | GitHub | Contact hours (ET) |
-|---|---|---|---|
+|Rishi Ajith|Architect|RishiA10|Flexible|
 
 ## RACI Matrix (Phase 1)
 
