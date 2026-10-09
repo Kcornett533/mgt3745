@@ -25,7 +25,10 @@ Higher scores are better. Scores 2 and 4 fall between these anchors.
 | Fit to specification | Essential requirements unmet | Most requirements met with workarounds | All required behavior supported |
 
 ### Scores
-
+**Decision:** How should the team implement candidate intake, eligibility checks, validation, persistent records, filtering, and artifact links?
+**Build:** Team-written HTML/CSS/Javascript frontend with a Cloudflare Worker API and D1 database. The team owns validation, eligibility rules, and data-access logic.
+**Buy:** Use an existing hosted service such as Airtable, with forms, stored candidate records, filtered views, and configured eligibility formulas. Evaluate whether its available plan supports the required behavior and access controls.
+**Delegate:** Have bolt.new generate the frontend and Cloudflare Worker/D1 integration from the team specification. The team inspects, tests, and maintains the output; AI never approves or merges it. PROJECT.md and FEATURES.md propose Cloudflare D1. The Gate evaluates that proposal; choosing another option would require coordinated updates to those files.
 ## ADR-001: <decision>
 
 - **Status:**
