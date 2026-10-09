@@ -39,13 +39,20 @@ R = Responsible (does the work), A = Accountable (answers for it; exactly one pe
 
 ## Rotation Plan
 
+Nobody holds the same role twice, and every role is filled in every phase.
+
 | Member | Phase 1 | Phase 2 | Final |
 |---|---|---|---|
-| <name> | <role> | <role> | <role> |
+| **Kamyaab Cornett** | Implementer | Specifier | Architect |
+| **Kenneth Riley II** | Specifier | Architect | Reviewer |
+| **Rishi A.** | Architect | Reviewer | Implementer |
+| **Regina Choi** | Reviewer | Implementer | Specifier |
 
-Nobody holds the same role twice, and every role is filled in every phase.
+---
 
 ## Meeting Log
 
 | Date | Decision or note | Recorded by |
 |---|---|---|
+| **Sunday, October 4, 2026 (6:00 PM)** | Conducted first formal team sync after HW5 submission. Drafted working agreement, assigned Phase 1 roles, drew Approver by lot for DACI-001, and agreed on problem-selection criteria weights. | Kenneth Riley II |
+| **Wednesday, October 7, 2026 (5:30 PM)** | Reviewed role artifact pull requests, reconciled STANDARDS.md conflicts, validated tools/governance files, and finalized README structure and cross-document link consistency before release. | Kamyaab Cornett |
