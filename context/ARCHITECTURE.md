@@ -1,6 +1,6 @@
 # ARCHITECTURE.md
 
-Stub from mgt3745-group-template. Accountable: the Architect.
+Accountable: Rishi Ajith (Architect).
 
 ## The Gate: Build, Buy, or Delegate
 
@@ -52,13 +52,13 @@ Scores are planning estimates, not test results. Each cell shows the score follo
 
 - **Date:** October 8, 2026
 - **Status:** Proposed
-- **Acountable:** Rishi Ajith (Architect)
+- **Accountable:** Rishi Ajith (Architect)
 - **Approver:** Pending
 - **Door:** Build
 
 - **Status:**
 ### Context
-The team is extending Regina's evidence tracker into a candidate screening prototype for accounting and finance roles. PROJECT.md and FEATURES.md require candidate intake, eligibility checks, validation, persistent records, recruiter filtering, and artifact links. The Gate recommends Build (114 points), compared with Buy (73) and Delegate (84). The data crossing is from the browser to Cloudflare through the team's Worker API, then into D1. This includes the candidate name, degree information, graduation year, self-reported work authorization and relation readiness, coursework declarations, artifact URLs, and derived eligibility results. Artifact files are not uploaded; the system stores links. A valid link or self-reported qualification does not establish verified competence. Cloudflare processes this data under its applicable service terms and Workers/D1 usage limits. The team must record the applicable terms and data handling in TOOLS.md before deployment. Credentials remain server-side. Rishi Ajith is accountable for documenting this architecture and cross-checking; deployment administration must be assigned to a named teammate. Regina's HW4 prototype used shared records without user separation. That is unsuitable for private applicant records. Until access controls are specified and tested, development and demonstrations will use synthetic candidate data only. CORS restrictions do not replace authentication or authorization.
+The team is extending Regina's evidence tracker into a candidate screening prototype for accounting and finance roles. PROJECT.md and FEATURES.md require candidate intake, eligibility checks, validation, persistent records, recruiter filtering, and artifact links. The Gate recommends Build (114 points), compared with Buy (73) and Delegate (84). The data crossing is from the browser to Cloudflare through the team's Worker API, then into D1. This includes the candidate name, degree information, graduation year, self-reported work authorization and relation readiness, coursework declarations, artifact URLs, and derived eligibility results. Artifact files are not uploaded; the system stores links. A valid link or self-reported qualification does not establish verified competence. Cloudflare processes this data under its applicable service terms and Workers/D1 usage limits. The team must record the applicable terms and data handling in TOOLS.md before deployment. Credentials remain server-side. Rishi Ajith is accountable for documenting this architecture and data crossing; deployment administration must be assigned to a named teammate. Regina's HW4 prototype used shared records without user separation. That is unsuitable for private applicant records. Until access controls are specified and tested, development and demonstrations will use synthetic candidate data only. CORS restrictions do not replace authentication or authorization.
 ### Options
 1. Build — team-written HTML/CSS/JavaScript frontend, Cloudflare Worker API, and D1 database. Gate total: 114.
 2. Buy — hosted forms, tables, and views such as Airtable. Gate total: 73. Selecting this option would require specification changes or additional integration. Plan limits and access controls remain unverified.
