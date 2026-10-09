@@ -1,26 +1,27 @@
-# <Team Name>: <Product or Problem in a Few Words>
-
-> Replace every line in angle brackets. A README that still carries template placeholders loses points. The demo repository at https://github.com/johnmcswain/mgt3745-team-demo shows a finished Phase 1 version of every file here.
+# Auditability and Verification Gate: Artifact-Based Student Competence Verification
 
 ## What
 
-<The team problem in one sentence.>
+Computational workflows frequently lose data provenance across fragmented terminal logs and manual notes, making analytical results difficult to audit, verify, and reproduce.
 
 ## Team
 
 | Member | Phase 1 role | Phase 2 role | Final role |
 |---|---|---|---|
-| <name> | <role> | <role> | <role> |
+| **Kamyaab Cornett** | Implementer | Specifier | Architect |
+| **Kenneth Riley II** | Specifier | Architect | Reviewer |
+| **Rishi A.** | Architect | Reviewer | Implementer |
+| **Regina Choi** | Reviewer | Implementer | Specifier |
 
 Working agreement, RACI matrix, and rotation plan: [TEAM.md](TEAM.md).
 
 ## Status
 
-<What Phase 1 decided, and what Phase 2 builds first.>
+Phase 1 established the problem scope, domain model, architectural boundaries, and AI governance standards for the Auditability and Verification Gate. Phase 2 builds the core Cloudflare Worker API and D1 edge storage first, implementing EARS acceptance criteria for candidate evaluation uploads, cryptographic SHA-256 signature verifications, and status status responses.
 
 ## See It Work
 
-<Phase 2: the deployed URL and a GIF or screenshots of the build.>
+*Phase 2 deliverable: Deployed edge URL and demonstration walk-throughs will be provided upon completion of the Phase 2 build.*
 
 ## Links, in Reading Order
 
@@ -38,4 +39,5 @@ Working agreement, RACI matrix, and rotation plan: [TEAM.md](TEAM.md).
 
 ## AI Use
 
-<Where AI tools were Responsible or Consulted, each with a link to its DDR or pull request.>
+- **Specification Probing & Gap Identification**: Delegated to `bolt.new` (Claude 3.5 Sonnet) as documented in [docs/DDR-001.md](docs/DDR-001.md).
+- **Standards & Policy Drafting**: Drafted with assistance from Claude 3.5 Sonnet and Gemini, reviewed and owned by Kamyaab Cornett as merged in Pull Request [#1](https://github.com/kcornett533/mgt3745-team-beta/pull/1).
