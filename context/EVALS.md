@@ -90,4 +90,18 @@ flowchart TD
 
 **When to check:** At the conclusion of Phase 2, by inspecting the repository's git commit history, pull request review logs, and database error traces.
 
+### Prediction Stake: Kenneth Riley II (Specifier)
+
+**Prediction:** When recruiters evaluate applicant profiles using the real-time filter gate, at least 85% will identify whether a candidate is Eligible or Ineligible in under 30 seconds without needing secondary transcript checks or asking clarifying questions.
+
+**Reasoning:** In HW2 INT-01 recruiter discovery, recruiters reported spending under 45 seconds per resume and facing fatigue from unstructured, keyword-stuffed submissions. Grounding the intake gate in four explicit deterministic rules (accredited degree, graduation timeline, work authorization, and required governance coursework) produces an unambiguous binary outcome that removes recruiter guesswork.
+
+**What would support my prediction:** Recruiters or user testers triage candidate profiles in under 30 seconds each, with 85% or higher accuracy in identifying the exact qualifying or failing criterion.
+
+**What would contradict my prediction:** Reviewers take longer than 45 seconds per profile, or more than 15% misinterpret the reason why a candidate received an Ineligible status.
+
+**When to check:** During user testing of the working prototype before the final project submission.
+
 ## Where the Stakes Disagree
+
+- **Candidate Artifact Friction vs. Recruiter Triage Speed:** Regina predicts candidates will struggle to supply tangible artifact evidence due to limited internship experience. Kenneth predicts that as long as the intake rules are deterministic, recruiters will triage applicants in under 30 seconds regardless of artifact depth. If candidates cannot identify evidence, recruiter triage may stall on incomplete inputs rather than speed up.
