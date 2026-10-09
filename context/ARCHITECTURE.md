@@ -75,6 +75,20 @@ Review this decision before Phase 2 implementation begins and no later than Octo
 ## Architecture Diagram
 
 ```mermaid
-flowchart LR
-    A["<component>"] --> B["<component>"]
+flowchart TD
+    C["Browser: HTML, CSS, JavaScript"]
+    V["Client validation and error feedback"]
+    F["Local name and status filtering"]
+    W["Cloudflare Worker: validation and eligibility rules"]
+    D["Cloudflare D1: candidate records"]
+
+    C --> V
+    V -->|"HTTPS POST /entries: candidate fields and artifact URLs"| W
+    C -->|"HTTPS GET /entries"| W
+    W -->|"Parameterized reads and writes"| D
+    D -->|"Stored records"| W
+    W -->|"Records, eligibility results, or JSON errors"| C
+    C --> F
 ```
+
+Client validation and filtering run in the browser. Only the Worker accesses D1. Artifact URLs are stored as text; external artifacts are reviewed by a human and are not automatically fetched. The initial prototype uses synthetic candidate data.
