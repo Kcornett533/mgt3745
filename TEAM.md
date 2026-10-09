@@ -4,39 +4,38 @@
 
 ## Working Agreement
 
-- **Meetings.** <When, where, how long, and who keeps time.>
-- **Channel.** <Where the team coordinates. Anything that changes an artifact goes in a pull request comment.>
-- **Response time.** <Hours on weekdays and on weekends.>
-- **Quiet member clause.** <What happens at 48, 72, and 96 hours without a response, and when the team emails the instructor.>
-- **Disagreement.** <How a disagreement becomes a DACI, and who drives it.>
-- **Dates.** <Your team's own checkpoints for this phase.>
+- **Meetings.** We will meet once a week through Zoom or a group call for about 30 minutes. We will agree on the time through our group chat.
+- **Channel.** We will use our group chat for regular communication. Changes to project files and decisions about project artifacts should be documented in GitHub pull requests or their comments.
+- **Response time.** Team members should respond within 24 hours on weekdays and 48 hours on weekends. If someone needs more time, they should let the team know.
+- **Quiet member clause.** After 48 hours without a response, we will send a reminder. After 72 hours, we will follow up again and ask whether the member needs help. After 96 hours without a response, if the delay affects the project, we will contact the instructor for guidance.
+- **Disagreement.** We will first discuss disagreements in the group chat or during a meeting. If we cannot agree, a team member will document the options and trade-offs in a DACI document. The team will discuss the options and record the decision.
+- **Dates.** We will set internal checkpoints for completing the Phase 1 documents, reviewing the requirements and architecture, completing evaluations, and checking that all required files are committed before the course deadline.
 
 ## Roster
 
 | Name | Role | GitHub | Contact hours (ET) |
-|---|---|---|---|
+|Regina Choi|Reviewer|ReginaChoi|17:00-00:00|
 
 ## RACI Matrix (Phase 1)
 
 R = Responsible (does the work), A = Accountable (answers for it; exactly one person, always a person), C = Consulted (asked before), I = Informed (told after). AI tools may be R or C and are never A. Every row where AI is R names the human A beside it.
 
-| Artifact | <Specifier> | <Architect> | <Implementer> | <Reviewer> | <Evaluator, teams of five> | AI tools |
-|---|---|---|---|---|---|---|
-| TEAM.md | | | | | | |
-| docs/DACI-001.md | | | | | | |
-| context/PROJECT.md | | | | | | |
-| context/USERS.md | | | | | | |
-| context/FEATURES.md | | | | | | |
-| context/ARCHITECTURE.md | | | | | | |
-| context/STANDARDS.md, TOOLS.md, CLAUDE.md | | | | | | |
-| .github/CODEOWNERS and branch protection | | | | | | |
-| docs/PROBE-001.md and docs/DDR-001.md | | | | | | |
-| context/EVALS.md (OST, RAT) | | | | | | |
-| context/EVALS.md (Prediction Stakes) | | | | | | |
-| Pull request reviews | | | | | | |
-| README.md | | | | | | |
+| Artifact | <Specifier> | <Architect> | <Implementer> | <Reviewer> | AI tools |
+|---|---|---|---|---|---|
+| TEAM.md | | | | | |
+| docs/DACI-001.md | | | | | |
+| context/PROJECT.md | | | | | |
+| context/USERS.md | | | | | |
+| context/FEATURES.md | | | | | |
+| context/ARCHITECTURE.md | | | | | |
+| context/STANDARDS.md, TOOLS.md, CLAUDE.md | | | | | |
+| .github/CODEOWNERS and branch protection | | | | | |
+| docs/PROBE-001.md and docs/DDR-001.md | | | | | |
+| context/EVALS.md (OST, RAT) | | | | | |
+| context/EVALS.md (Prediction Stakes) | | | | | |
+| Pull request reviews | | | | | |
+| README.md | | | | | |
 
-Teams of four: delete the Evaluator column.
 
 ## Rotation Plan
 
