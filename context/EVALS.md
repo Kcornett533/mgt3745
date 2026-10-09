@@ -102,6 +102,18 @@ flowchart TD
 
 **When to check:** During user testing of the working prototype before the final project submission.
 
+### Prediction Stake: Rishi Ajith (Architect)
+
+**Prediction:** During Phase 2 testing, valid synthetic candidate records will survive a page reload and appear in a second browser. At least one request sent directly to the Worker with a missing required field will be rejected without creating a database row.
+
+**Reasoning:** Cloudflare D1 should preserve records independently of browser storage. Server-side validation should enforce required fields even when a request skips the form.
+
+**What would support my prediction:** A saved record appears after reloading and in a second browser. The malformed request returns HTTP 400, and no corresponding row is stored.
+
+**What would contradict my prediction:** The saved record disappears, cannot be retrieved in the second browser, or the Worker stores the malformed submission.
+
+**When to check:** During Phase 2 integration testing, using synthetic data.
+
 ## Where the Stakes Disagree
 
 - **Candidate Artifact Friction vs. Recruiter Triage Speed:** Regina predicts candidates will struggle to supply tangible artifact evidence due to limited internship experience. Kenneth predicts that as long as the intake rules are deterministic, recruiters will triage applicants in under 30 seconds regardless of artifact depth. If candidates cannot identify evidence, recruiter triage may stall on incomplete inputs rather than speed up.
