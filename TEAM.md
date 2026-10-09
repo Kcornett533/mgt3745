@@ -45,7 +45,7 @@ Nobody holds the same role twice, and every role is filled in every phase.
 |---|---|---|---|
 | **Kamyaab Cornett** | Implementer | Specifier | Architect |
 | **Kenneth Riley II** | Specifier | Architect | Reviewer |
-| **Rishi A.** | Architect | Reviewer | Implementer |
+| **Rishi Ajith** | Architect | Reviewer | Implementer |
 | **Regina Choi** | Reviewer | Implementer | Specifier |
 
 ---
