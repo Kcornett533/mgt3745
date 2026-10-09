@@ -34,3 +34,11 @@ Accountable: Kenneth Riley II (Specifier)
 - **Context.** A finance and compliance manager responsible for auditing high-stakes transactions, schedules, and intake records. As documented in INT-01, routine record intake carries substantial risk: a single omitted field or unvalidated detail creates compounding operational delays and compliance liability, forcing managers to rely on strict manual reviews to catch missing inputs before records advance.
 - **Job statement.** When I am reviewing new-hire onboarding records or financial intake documents, I want transparent confirmation that submissions adhere to strict internal control standards with complete audit trails, so that unvalidated or malformed entries are prevented from entering production systems.
 - **Success looks like.** Every candidate verification or document record is validated against strict schema rules before storage, rejecting incomplete submissions with explicit error codes (HTTP 400) and feedback, and preserving an immutable, persistent audit log in the edge database.
+
+---
+
+## Profile 4: Biomedical Research Lead & Computational Pipeline Author
+
+- **Context.** A computational biology researcher or R&D lead (such as an undergraduate lab researcher or biotech executive) managing custom data pipelines and nonstandard experimental protocols. As documented in INT-01 and INT-02, researchers face massive pre-submission friction when packaging raw data (e.g., spending 10+ hours manually organizing TIF files and script logs) and risk severe publication delays or unbudgeted external re-runs when peer reviewers challenge the validity of custom pipeline execution thresholds.
+- **Job statement.** When I am submitting novel scientific findings or custom data pipelines for peer review, I want to automatically generate an immutable data manifest and verified protocol execution lineage, so that I can eliminate manual file packaging overhead and definitively prove raw data integrity without costly, delayed external validation re-runs.
+- **Success looks like.** An automated execution logging system that captures 64-character SHA-256 cryptographic file signatures, pipeline parameter state, and dataset versions during analysis runs, creating an immutable audit trail that can be cross-referenced across lab workstations and instantly audited by peer reviewers.
