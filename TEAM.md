@@ -17,6 +17,7 @@
 |Regina Choi|Reviewer|ReginaChoi|17:00-00:00|
 |Rishi Ajith|Architect|RishiA10|Flexible|
 | Kenneth Riley II | Specifier | kdotll | Flexible |
+| Kamyaab Cornett | Implementer | kcornett533 | Flexible |
 
 ## RACI Matrix (Phase 1)
 
